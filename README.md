@@ -2,6 +2,12 @@
 
 Makes color palette from a picture.
 
+**Test image** :
+
+
+![colorPalette Test img](https://raw.github.com/Projekod/ColorPalette/master/test.jpg)
+
+
 **usage** :
 
 <pre>
@@ -50,4 +56,3 @@ Array
 )
 </pre>
 
-**Test image ** : ![colorPalette Test img]()
