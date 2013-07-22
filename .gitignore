@@ -1,0 +1,10 @@
+INSTALL.txt
+LICENSE.txt
+README.txt
+demos/
+extras/documentation
+.idea
+vendor
+atlassian-ide-plugin.xml
+composer.lock
+composer.phar
