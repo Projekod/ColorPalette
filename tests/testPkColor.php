@@ -6,7 +6,7 @@ class PKColorTest extends PHPUnit_Framework_TestCase {
     protected $obj;
     
     private $granularity = '20';
-    private $imageName = 'images.jpg';
+    private $imageName = 'images';
     private $colorsCount = '4';
     
     protected function setUp() {
@@ -28,11 +28,15 @@ class PKColorTest extends PHPUnit_Framework_TestCase {
     /**
      * @dataProvider provider
      */
-    public function testGetIt($a) {
+    public function testGetIt($expectedValues) {
         
         $this->setName('Resim dogru islenmis mi');
+
+        $extensions = array('.png', '.gif', '.jpg');
         
-        $this->assertEquals($a, $this->obj->getIt($this->imageName));
+        foreach($extensions as $ext) {
+            $this->assertEquals($expectedValues, $this->obj->getIt($this->imageName . $ext ));
+        }
     }
     
     public function provider() {
