@@ -27,16 +27,16 @@
 <body>
 
 <div class='image'>
-    <img src='test.jpg' alt='color palette test image' />
+    <img width="150" height="150" src='images.jpg' alt='color palette test image' />
 </div>
 
 <?php
-require "pk_color.php";
+require "PKColor.php";
 
-$pkc = new pk_color();
-$palette = $pkc->setGranularity(10)
-    ->setPicture("test.jpg")
-    ->setColorsCount(30)
+$pkc = new PKColor();
+$palette = $pkc->setGranularity(20)
+    ->setPicture("images.jpg")
+    ->setColorsCount(10)
     ->getIt();
 
 

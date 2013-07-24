@@ -5,7 +5,7 @@
  */
 
 
-class pk_color {
+class PKColor {
 
     protected $granularity = 5;
 
@@ -32,10 +32,8 @@ class pk_color {
     }
 
 
-    public function test(){
-        echo $this->picture."<br/>";
-        echo $this->granularity."<br/>";
-        echo $this->colorsCount."<br/>";
+    public function getValues(){
+        return array($this->picture, $this->granularity,  $this->colorsCount);
     }
 
     public function getIt($picture=""){
