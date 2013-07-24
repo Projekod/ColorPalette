@@ -25,10 +25,19 @@ class PKColorTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals(array($this->imageName, $this->granularity, $this->colorsCount), $this->obj->getValues());
     }
     
-    public function testGetIt() {
+    /**
+     * @dataProvider provider
+     */
+    public function testGetIt($a) {
+        
         $this->setName('Resim dogru islenmis mi');
         
-        $expectedValues = array('FF0000', '000000', '993333', 'FF0033');
-        $this->assertEquals($expectedValues, $this->obj->getIt($this->imageName));
+        $this->assertEquals($a, $this->obj->getIt($this->imageName));
+    }
+    
+    public function provider() {
+        return array(
+            array(array('FF0000', '000000', '993333', 'FF0033'))
+        );
     }
 }
