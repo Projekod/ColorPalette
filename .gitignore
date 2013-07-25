@@ -8,3 +8,4 @@ vendor
 atlassian-ide-plugin.xml
 composer.lock
 composer.phar
+/nbproject/private/
