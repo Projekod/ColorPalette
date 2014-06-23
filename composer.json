@@ -1,0 +1,19 @@
+{
+    "name": "projekod/colorpalette",
+    "type": "library",
+    "description": "Makes color palette from a picture",
+    "keywords": ["color","colour","palette","tools"],
+    "homepage": "https://github.com/Projekod/RoundColor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ali GUNDOGDU",
+            "email": "ali@projekod.com",
+            "homepage": "http://projekod.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
