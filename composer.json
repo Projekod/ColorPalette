@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Makes color palette from a picture",
     "keywords": ["color","colour","palette","tools"],
-    "homepage": "https://github.com/Projekod/RoundColor",
+    "homepage": "https://github.com/Projekod/ColorPalette",
     "license": "MIT",
     "authors": [
         {
